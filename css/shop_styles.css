@@ -162,6 +162,7 @@ input:focus {
 }
 
 .goods-card{
+    position: relative;
     flex-direction: column;
     display: grid;
     padding-left: 27px;
