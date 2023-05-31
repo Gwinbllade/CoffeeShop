@@ -51,22 +51,29 @@ main{
     justify-self: center;
 }
 
-header button{
-    margin-top: 20px;
+.a-button {
+    margin-top: 40px;
     background-color: transparent;
     width: 120px;
     height: 30px;
+    
     align-self: center;
     justify-self: center;
     color: white;
     border-color: white;
     border-radius: 2px;
     border: 1px solid;
+    transition: background-color 0.3s ease;
+    z-index: 500;
+}
 
+.a-button:hover{
+    background-color: rgba(0, 0, 0, 0.981);
+    border-color: rgba(0, 0, 0, 0.981);
 }
 
 .about-us{
-    /* height: 520px; */
+
     display: flex;
     justify-content: center;
 }
