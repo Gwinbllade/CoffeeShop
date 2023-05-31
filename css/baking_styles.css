@@ -1,0 +1,10 @@
+
+header{
+    margin: 0px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 260px;
+    background: url("/assets/img/bk-coffee.png")  center center/cover;
+    background-position: center bottom 60% ; /* Зміщення картинки вниз */
+}
