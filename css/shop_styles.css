@@ -16,9 +16,22 @@ header{
 }
 
 .navigation{
-    margin-left: 200px;
-    margin-top: 30px;
+    padding-left: 200px;
+    vertical-align: middle;
+    height: 40px;
+    --blacking-offset:20;
+    top:20px;
     position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navigation *{
+    margin-top: 2px  
+}
+
+.spacer{
+    height: 80px;
 }
 
 .nav-men {

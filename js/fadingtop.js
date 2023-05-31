@@ -8,6 +8,12 @@ $(document).scroll(() => {
     let bar = $('.blacking-bar')[0];
     let hmx = $(img).height() - $(bar).height();
     let cs = $(window).scrollTop();
+    let pl = parseInt($(bar).css('--blacking-offset'))
+    if(cs <= pl)
+        $(bar).css('top', pl-cs+'px');
+    else
+        $(bar).css('top', 0);
+
     if(hmx <= cs){
         $(bar).css('background-color', 'black');
         return;
