@@ -2,12 +2,9 @@
 .footer {
     display: flex;
     align-items: center;
-
     bottom: 0;
     width: 100%;
     color: #666;
-    /* padding-bottom: var(--general-padding);
-    padding-top: var(--general-padding); */
     background-color: black;
     left: 0;
     right: 0;
@@ -20,6 +17,7 @@
 
 .footer .center{
     text-align: center;
+    font-size: 25px;
 }
 
 .footer .end{
@@ -34,11 +32,10 @@
 }
 
 
-/* Style all font awesome icons */
+
 .footer a{
-    size: 20px;
-    /* margin-left: 5px;
-    margin-right: 5px; */
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: var(--standart-size-font);
     text-align: center;
     text-decoration: none;
@@ -48,6 +45,7 @@
 .footer a:hover {
     opacity: 0.7;
 }
+
   
 
 

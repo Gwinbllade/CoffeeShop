@@ -42,10 +42,9 @@ main{
 
 .info::after {
     content: "";
-    position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+
     width: 240px;
     height: 1px;
     background-color: black;
@@ -122,6 +121,17 @@ main{
     height: 30px;
     width: 180px;
     border: 0px;
+    
+}
+
+input:placeholder{
+    padding: 5px; 
+    
+}
+
+
+.search label{
+    margin-top: 5px;
 }
 
 input:focus {
@@ -153,7 +163,7 @@ input:focus {
 
 .goods-card{
     flex-direction: column;
-    display: flex;
+    display: grid;
     padding-left: 27px;
     padding-right: 27px;
     padding-top: 25px;
@@ -169,6 +179,7 @@ input:focus {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 70px;
     grid-row-gap: 58px;
+    border-radius: 8px;
 
 }
 
@@ -180,11 +191,14 @@ input:focus {
     margin-top: 14px;
     align-self: end;
 }
-.price{
-    justify-self: end;
-    align-self: end;
-    margin-top: 14px;
+
+
+.goods img{
+    height: 130px;
+    width: 160px;
+    
 }
+
 
 
 
