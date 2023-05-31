@@ -2,19 +2,117 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <!--Прикольна шняга щоб картинки рухалися при скролі, хай лежить-->
-        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/fadingtop.js"></script>
+        <script src="js/database.js"></script>
+        <script src="js/coffeesearch.js"></script>
         <link rel="icon" href="assets/img/favicon.svg">
+
+        <link rel="stylesheet" href="css/index_styles.css">
+        <link rel="stylesheet" href="css/navigation.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/blacking.css">
     </head>
 
     <body>
-        <div>
 
+        <header>
+            <div class="navigation blacking-bar">
+                <div class = 'nav-menu'>
+                  <ul class = "nav">
+                   <li  id="about" > <a href="about.html">Про нас</a></li>
+                   <li> <a href="">Кабінет</a></li>
+                   <li> <a href="menu.html">Меню</a></li>
+                  </ul>
+                 </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="titel">
+                <p>Кава від пана Івана - в нас гаряча не тільки кава </p>
+                <div class="image-wrapper">
+                    <div class="image-line"></div>
+                    <img src="assets/img/beans-white.svg" alt="">
+                    <div class="image-line"></div>
+                </div>
+               
+        
+            </div>
+            <div class = "text-titel"> <p>Ми наповнимо ваш день енергією і смаком</p></div>
+            <div class = "text-titel"> <p>Хочете спробувати?</p></div>
+            <div class="blacker"></div>
+            <button>Спробувати</button>
+        </header>
+
+        <div class="about-us">
+
+            <div class="info-text">
+                <div class="titel">Про нас</div>
+        
+                
+                <div class="text-content">
+                    "Кава від пана Івана" - це затишна кав'ярня, 
+                    де можна насолоджуватися чудовою атмосферою та смачною кавою. 
+                    Завітавши сюди, ви відчуєте себе як у затишному домашньому куточку, 
+                    де завжди раді бачити гостей. <br><br>
+                    Кав'ярня пропонує широкий вибір кавових напоїв, 
+                    від класичного еспресо до різноманітних капучино та латте. 
+                    Напої готують з використанням високоякісних кавових зерен, 
+                    що забезпечує насичений та багатий смак. 
+                    Крім того, в меню також є великий вибір чаю, соків та смачних десертів.<br><br>
+                    У кав'ярні "Кава від пана Івана" завжди приємна музика, 
+                    додатковою зручністю є наявність Wi-Fi та комфортні меблі, 
+                    що робить це місце ідеальним для проведення робочих зустрічей 
+                    або зустрічей з друзями.<br><br>
+                    Загалом, "Кава від пана Івана" - це чудове місце для тих, 
+                    хто любить смачну каву та затишну атмосферу. 
+                    Завітавши сюди, ви точно захочете повернутися знову та знову.<br><br>
+                </div>
+            </div>
+           
         </div>
-        <div style="height: 1500;"></div>
+
+        <div class="top-goods-container">
+            <div class="title-top-goods">
+                Наші популярні товари
+            </div>
+          
+            <div class="produc-conteiner">
+                <div class="produc-card">
+                    <img src="/assets/img/solimo.png" alt="">
+                    <div class="product-name">Гарячий Іван</div>
+                    <div class="price">34.00 грн.</div>
+                </div>
+
+                <div class="produc-card">
+                    <img src="/assets/img/solimo.png" alt="">
+                    <div class="product-name">Гарячий Іван</div>
+                    <div class="price">34.00 грн.</div>
+                </div>
+
+                <div class="produc-card">
+                    <img src="/assets/img/solimo.png" alt="">
+                    <div class="product-name">Гарячий Іван</div>
+                    <div class="price">34.00 грн.</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class = "footer">
+            <div class="start">
+                <span>Зв'язок з нами: +380123456789</span>
+            </div>
+            <div class="center">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+            </div>
+            <div class="end">
+                <span>©2023 Кава від пана Івана</span>
+            </div>
+        </div>
     </body>
 </html>

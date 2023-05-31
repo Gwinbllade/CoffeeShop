@@ -1,0 +1,51 @@
+.navigation{
+    padding-left: 200px;
+    vertical-align: middle;
+    height: 40px;
+    --blacking-offset:20;
+    top:20px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navigation *{
+    margin-top: 2px  
+}
+
+.spacer{
+    height: 80px;
+}
+
+.nav-men {
+    left: 0;
+    height: 35px;
+    border-bottom: solid;
+    width: 100%;
+}
+  
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+  
+}
+  
+ul.nav li {
+    display: inline;
+    font-size: 0px;
+}
+
+  
+a {
+    display: inline-block;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    margin-left: 0px;
+}
+
