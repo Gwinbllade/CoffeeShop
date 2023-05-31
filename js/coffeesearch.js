@@ -1,20 +1,21 @@
 /*
     Айдішки:
-    next-page - button
-    previous-page - button
-    search-box - input
-    coffee-container - div
-    is-sweet - button
-    is-strong - button
-    is-classic - button
-    go-search - button
+        next-page - button
+        previous-page - button
+        search-box - input
+        coffee-container - div //тримає картки з кавою
+            //кнопки фільтрації:
+        is-sweet - button
+        is-strong - button
+        is-classic - button
+        go-search - button //кнопка пошуку
     Стилі:
-    .coffee-box - div
-    .coffee-box-title - text
-    .coffee-box-description - text
-    .coffee-box-price - text
-    .filter-selected - button
-    
+            //перший з цих має мати hidden грає роль шаблону
+        .coffee-box - div //картка з кавою
+        .coffee-box-title - text
+        .coffee-box-description - text
+        .coffee-box-price - text 
+        .filter-selected - button //кнопка фільтрації увімкнена    
 */
 
 
