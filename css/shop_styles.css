@@ -13,7 +13,6 @@ header{
     display: flex;
     flex-direction: column;
     height: 260px;
-    border: 1px solid;
     background: url("/assets/img/bk-shop.png")  center center/cover;
 }
 
@@ -89,8 +88,173 @@ a {
 }
 
 .info-text{
+    display: flex;
+    flex-direction: column;
     width: 346px;
     height: 355px;
     margin-top: 23px;
-    border: 1px solid;
+
 }
+
+.text-titel{
+    align-self: center;
+    font-size: 24px;
+}
+
+
+
+.image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    height: 29px;
+    width: 29px;
+    margin: 20px;
+}
+
+.image-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: black;
+    margin: 0 25px;
+    width: 60px;
+}
+
+.text-content{
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+.goods{
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 60px;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+
+}
+
+.search input{
+    
+    margin-left: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    height: 30px;
+    width: 180px;
+    border: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.type-button{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border: 0px;
+    width: 75px;
+    height: 30px;
+    size: 12px;
+}
+
+.goods-card{
+    flex-direction: column;
+    display: flex;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 25px;
+    height: 260px;
+    width: 220px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    font-size: 16px;
+}
+
+.goods-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 58px;
+
+}
+
+.goods-description{
+    margin-top: 14px;
+}
+
+.type{
+    margin-top: 14px;
+    align-self: end;
+}
+.price{
+    align-self: end;
+    margin-top: 14px;
+}
+
+
+
+/*-----------------------footer----------------------- */ 
+.footer {
+    display: flex;
+    align-items: center;
+
+    bottom: 0;
+    width: 100%;
+    color: #666;
+    padding-bottom: var(--general-padding);
+    padding-top: var(--general-padding);
+    background-color: black;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+}
+.footer .start{
+    text-align: start;
+}
+
+.footer .center{
+    text-align: center;
+}
+
+.footer .end{
+    text-align: end;
+}
+.footer span {
+    color: white;
+    padding-right: var(--general-padding);
+    padding-left: var(--general-padding);
+    font-family: var(--funny-font);
+    font-size: var(--standart-size-font);
+}
+
+
+/* Style all font awesome icons */
+.footer a{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: var(--standart-size-font);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+  
+.footer a:hover {
+    opacity: 0.7;
+}
+  
+
+
+
+
