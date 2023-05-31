@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Merienda';
 }
   
 
@@ -11,6 +9,7 @@
 header{
     margin: 0px;
     display: flex;
+    position: relative;
     flex-direction: column;
     height: 260px;
     background: url("/assets/img/bk-shop.png")  center center/cover;
@@ -19,6 +18,7 @@ header{
 .navigation{
     margin-left: 200px;
     margin-top: 30px;
+    position: fixed;
 }
 
 .nav-men {
