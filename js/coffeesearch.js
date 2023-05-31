@@ -76,8 +76,7 @@ $(document).ready(() => {
         renderCoffee();
     });
 
-    query();
-
+    renderCoffee();
 });
 
 
@@ -88,7 +87,7 @@ function query(){
         .filter(x => {
             let r = true;
             if(sb != null && sb != "")
-                r = x.name.toLowerCase().includes(sb);
+                r = x.name.toLowerCase().includes(sb.toLowerCase());
             if(isSweet)
                 r = r && x.tags.includes('Солодка');
             if(isStrong)
@@ -114,6 +113,7 @@ function renderCoffee(){
         $(cl).children('.coffee-box-title').first().html(o.name)
         $(cl).children('.coffee-box-description').first().html(o.description)
         $(cl).children('.coffee-box-price').first().html(o.price.toFixed(2) + '₴');
+        $(cl).children('.coffee-box-image').first().prop('src', o.image);
         $('#coffee-container').append(cl);
     }
     if(i == 0)

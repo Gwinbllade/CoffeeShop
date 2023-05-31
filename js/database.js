@@ -8,7 +8,8 @@ const coffee = [
             'Міцна',
             'Класична',
             'Солодка'
-        ]
+        ],
+        image: 'assets/img/coffee1.png'
     },
     {
         name: 'Совєто',
@@ -18,7 +19,8 @@ const coffee = [
         tags: [
             'Солодка',
             'Класична'
-        ]
+        ],
+        image: 'assets/img/coffee2.png'
     },
     {
         name: 'Американо Форте',
@@ -28,7 +30,8 @@ const coffee = [
         tags: [
             'Міцна',
             'Класична'
-        ]
+        ],
+        image: 'assets/img/coffee3.png'
     },
     {
         name: 'Капучино Кремове',
@@ -37,7 +40,8 @@ const coffee = [
         available: 180,
         tags: [
             'Солодка'
-        ]
+        ],
+        image: 'assets/img/coffee4.png'
     },
     {
         name: 'Латте Карамельне',
@@ -47,7 +51,8 @@ const coffee = [
         tags: [
             'Солодка',
             'Класична'
-        ]
+        ],
+        image: 'assets/img/tiramitsu.png'
     },
     {
         name: 'Мокко Шоколадне',
@@ -57,7 +62,8 @@ const coffee = [
         tags: [
             'Солодка',
             'Класична'
-        ]
+        ],
+        image: 'assets/img/coffee4.png'
     },
     {
         name: 'Кава Френч Прес Інтенсивна',
@@ -66,7 +72,8 @@ const coffee = [
         available: 120,
         tags: [
             'Міцна',
-        ]
+        ],
+        image: 'assets/img/tiramitsu.png'
     },
     {
         name: 'Макіато Карамельне',
@@ -75,7 +82,8 @@ const coffee = [
         available: 100,
         tags: [
             'Солодка'
-        ]
+        ],
+        image: 'assets/img/coffee3.png'
     },
     {
         name: 'Раф Кокосовий',
@@ -84,7 +92,8 @@ const coffee = [
         available: 80,
         tags: [
             'Солодка'
-        ]
+        ],
+        image: 'assets/img/coffee1.png'
     },
     {
         name: 'Кава Хемлок',
@@ -93,7 +102,8 @@ const coffee = [
         available: 60,
         tags: [
             'Міцна'
-        ]
+        ],
+        image: 'assets/img/coffee2.png'
     },
     {
         name: 'Афріканська Копі',
@@ -103,7 +113,8 @@ const coffee = [
         tags: [
             'Міцна',
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee4.png'
     },
     {
         name: 'Несквік',
@@ -112,7 +123,8 @@ const coffee = [
         available: 40,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee2.png'
     },
     {
         name: 'Пунш Гарячий',
@@ -121,7 +133,8 @@ const coffee = [
         available: 120,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/tiramitsu.png'
     },
     {
         name: 'Кава Блакитний Вершник',
@@ -130,7 +143,8 @@ const coffee = [
         available: 110,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee3.png'
     },
     {
         name: 'Панна Котонет',
@@ -140,7 +154,8 @@ const coffee = [
         tags: [
             'Cолодка',
             'Міцна'
-        ]
+        ],
+        image: 'assets/img/coffee2.png'
     },
     {
         name: 'Кава Банановий Сплеск',
@@ -149,7 +164,8 @@ const coffee = [
         available: 100,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee4.png'
     },
     {
         name: 'Екзотичний Манго Латте',
@@ -158,7 +174,8 @@ const coffee = [
         available: 90,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/tiramitsu.png'
     },
     {
         name: 'Ванільний Флогер',
@@ -167,7 +184,8 @@ const coffee = [
         available: 120,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee1.png'
     },
     {
         name: 'Карамельно-Горіховий Крем',
@@ -177,7 +195,8 @@ const coffee = [
         tags: [
             'Cолодка',
             'Міцна'
-        ]
+        ],
+        image: 'assets/img/tiramitsu.png'
     },
     {
         name: "М'ятно-Шоколадний Бриз",
@@ -186,7 +205,8 @@ const coffee = [
         available: 100,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee3.png'
     },
     {
         name: 'Кава Лимонний Зест',
@@ -195,7 +215,8 @@ const coffee = [
         available: 120,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee2.png'
     },
     {
         name: 'Імбирно-Медовий Еспресо',
@@ -205,7 +226,8 @@ const coffee = [
         tags: [
             'Класична',
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee4.png'
     },
     {
         name: 'Кава Коктейль Мохіто',
@@ -214,7 +236,8 @@ const coffee = [
         available: 100,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee3.png'
     },
     {
         name: 'Черешневий Віскі-Кофе',
@@ -224,7 +247,8 @@ const coffee = [
         tags: [
             'Cолодка',
             'Міцна'
-        ]
+        ],
+        image: 'assets/img/tiramitsu.png'
     },
     {
         name: 'Кава Морозиво Італія',
@@ -233,6 +257,7 @@ const coffee = [
         available: 110,
         tags: [
             'Cолодка'
-        ]
+        ],
+        image: 'assets/img/coffee4.png'
     }
 ]

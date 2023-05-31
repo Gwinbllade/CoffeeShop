@@ -6,8 +6,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/fadingtop.js"></script>
-        <script src="js/database.js"></script>
-        <script src="js/coffeesearch.js"></script>
+        <script src="js/bakingbase.js"></script>
+        <script src="js/bakingsearch.js"></script>
         <link rel="icon" href="assets/img/favicon.svg">
 
         <link rel="stylesheet" href="css/shop_styles.css">
@@ -71,14 +71,12 @@
 
                     <label style="margin-left: 83px; margin-right: 35px;">Фільтр</label>
 
-                    <button id="is-sweet" class="type-button">Солодка</button>
-                    <button id="is-strong" class="type-button">Міцна</button>
-                    <button id="is-classic" class="type-button">Класична</button>
-
-                    
+                    <button id="is-sweetie" class="type-button">Тістечка</button>
+                    <button id="is-cookie" class="type-button">Печиво</button>
+                    <button id="is-baking" class="type-button">Випічка</button>
 
                 </div>
-                <div id="coffee-container" class="goods-content">
+                <div id="baking-container" class="goods-content">
                     
                 </div>  
                 <div class="button-change-page-container">
@@ -107,17 +105,11 @@
         </div>
     </body>
 
-    <div class="goods-card coffee-box" style="display: none;">
-        <img src="assets/img/manycoffee.png" alt="">
-        <div class="goods-description coffee-box-title">
-            Совіт 0.75 л
-        </div>
-
-        <div class="type coffee-box-description">
-            Солдка
-        </div>
-
-        <div class="price coffee-box-price">100.0 грн.</div>
+    <div class="goods-card baking-box" style="display: none;">
+        <img class="baking-box-image" alt="">
+        <div class="goods-description baking-box-title"></div>
+        <div class="type baking-box-description"></div>
+        <div class="price baking-box-price"></div>
     </div>
 
 </html>
