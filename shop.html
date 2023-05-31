@@ -61,76 +61,24 @@
 
             <div class="goods">
                 <div class="search">
-                    <label for="">Пошук</label>
-                    <input type="text" placeholder="Введіть тут">
+                    <button class="type-button" id="previous-page">&lt;</button>
 
-                    <label for="" style="margin-left: 83px; margin-right: 35px;">Фільтер</label>
+                    <label>Пошук</label>
+                    <input id="search-box" type="text" placeholder="Введіть тут">
 
-                    <button class="type-button">Тип1</button>
-                    <button class="type-button">Тип1</button>
-                    <button class="type-button">Тип1</button>
+                    <label style="margin-left: 83px; margin-right: 35px;">Фільтр</label>
+
+                    <button id="is-sweet" class="type-button">Солодка</button>
+                    <button id="is-strong" class="type-button">Міцна</button>
+                    <button id="is-classic" class="type-button">Класична</button>
                     
+                    <button class="type-button" id="next-page">&gt;</button>
+
                 </div>
-                <div class="goods-content">
+                <div id="coffee-container" class="goods-content">
                     
-
-                    <div class="goods-card">
-                        <img src="assets/img/manycoffee.png" alt="">
-                        <div class="goods-description">
-                            Совіт 0.75 л
-                        </div>
-
-                        <div class="type">
-                            Солдка
-                        </div>
-
-                        <div class="price">100.0 грн.</div>
-                    </div>
-
-                    <div class="goods-card">
-                        <img src="assets/img/manycoffee.png" alt="">
-                        <div class="goods-description">
-                            Совіт 0.75 л
-                        </div>
-
-                        <div class="type">
-                            Солдка
-                        </div>
-
-                        <div class="price">100.0 грн.</div>
-                    </div>
-                    
-                    <div class="goods-card">
-                        <img src="assets/img/manycoffee.png" alt="">
-                        <div class="goods-description">
-                            Совіт 0.75 л
-                        </div>
-
-                        <div class="type">
-                            Солдка
-                        </div>
-
-                        <div class="price">100.0 грн.</div>
-                    </div>
-
-                    <div class="goods-card">
-                        <img src="assets/img/manycoffee.png" alt="">
-                        <div class="goods-description">
-                            Совіт 0.75 л
-                        </div>
-
-                        <div class="type">
-                            Солдка
-                        </div>
-
-                        <div class="price">100.0 грн.</div>
-                    </div>
-
-                    
-
-                    
-                
-                </div>               
+                </div>  
+                <h1 class="none-message" style="display: none;">Нічого немає :&lpar;</h1>           
             </div>
 
 
@@ -156,4 +104,18 @@
             </div>
         </div>
     </body>
+
+    <div class="goods-card coffee-box" style="display: none;">
+        <img src="assets/img/manycoffee.png" alt="">
+        <div class="goods-description coffee-box-title">
+            Совіт 0.75 л
+        </div>
+
+        <div class="type coffee-box-description">
+            Солдка
+        </div>
+
+        <div class="price coffee-box-price">100.0 грн.</div>
+    </div>
+
 </html>

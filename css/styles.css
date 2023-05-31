@@ -4,3 +4,6 @@
     font-family: 'Lobster';
 }
 
+.collapse {
+    height: 0!important;
+}

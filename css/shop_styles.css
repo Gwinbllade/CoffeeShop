@@ -26,6 +26,10 @@ header{
     z-index: 999;
 }
 
+.filter-selected{
+    background-color: lightgray!important;
+}
+
 .navigation *{
     margin-top: 2px  
 }
@@ -180,6 +184,14 @@ input:focus {
     width: 75px;
     height: 30px;
     size: 12px;
+}
+.type-button:disabled{
+    display: none;
+}
+
+.none-message{
+    color: lightgray;
+    margin: auto;
 }
 
 .goods-card{

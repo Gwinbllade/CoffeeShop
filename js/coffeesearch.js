@@ -27,7 +27,6 @@ let isStrong = false;
 let isClassic = false;
 
 $(document).ready(() => {
-
     $('#is-sweet').click(() => {
         if(isSweet){
             $('#is-sweet').removeClass('filter-selected');
@@ -40,7 +39,7 @@ $(document).ready(() => {
     });
     
     $('#is-strong').click(() => {
-        if(isSweet){
+        if(isStrong){
             $('#is-strong').removeClass('filter-selected');
             isStrong = false;
         } else {
@@ -51,7 +50,7 @@ $(document).ready(() => {
     });
     
     $('#is-classic').click(() => {
-        if(isSweet){
+        if(isClassic){
             $('#is-classic').removeClass('filter-selected');
             isClassic = false;
         } else {
@@ -61,7 +60,7 @@ $(document).ready(() => {
         query();
     });
     
-    $('#go-search').click(()=>{
+    $('#search-box').on('input',()=>{
         query();
     });    
 
@@ -77,12 +76,14 @@ $(document).ready(() => {
         renderCoffee();
     });
 
-})
+    query();
+
+});
 
 
 
 function query(){
-    let sb = $('#input-box').val();
+    let sb = $('#search-box').val();
     Cquery = coffee
         .filter(x => {
             let r = true;
@@ -96,29 +97,35 @@ function query(){
                 r = r && x.tags.includes('Класична');
             return r;
         });
+    position = 0;
+    checkButtons();
     renderCoffee();
 }
 
 function renderCoffee(){
     $('#coffee-container').empty();
-    let tmpl = $('.coffe-box')[0];
-    for(let i = 0; i < pageSize; i++){
+    let tmpl = $('.coffee-box').first();
+    let i = 0;
+    let lm = pageSize > Cquery.length - position ? Cquery.length - position : pageSize
+    for(; i < lm; i++){
         let o = Cquery[position + i];
         let cl = $(tmpl).clone();
-        cl.id = null;
-        $(cl).prop('isVisible').removeAttr('hidden');
-        $(cl).children('.coffee-box-title')[0].html(o.name)
-        $(cl).children('.coffee-box-description')[0].html(o.description)
-        $(cl).children('.coffee-box-price')[0].html(o.price.toFixed(2) + '₴');
+        $(cl).css('display','block');
+        $(cl).children('.coffee-box-title').first().html(o.name)
+        $(cl).children('.coffee-box-description').first().html(o.description)
+        $(cl).children('.coffee-box-price').first().html(o.price.toFixed(2) + '₴');
         $('#coffee-container').append(cl);
     }
+    if(i == 0)
+        $('.none-message').css('display','inline-block')
+    else $('.none-message').css('display','none')
 }
 
 function checkButtons(){
     if(position + pageSize >= Cquery.length)
-        $('#next-page').prop('disable', 'true');
-    else $('#next-page').prop('disable', 'false');
+        $('#next-page').prop('disabled', true);
+    else $('#next-page').removeAttr('disabled');
     if(position > 0)
-        $('#previous-page').prop('disable', 'false');
-    else $('#previous-page').prop('disable', 'true');
+        $('#previous-page').removeAttr('disabled');
+    else $('#previous-page').prop('disabled', true);
 }
