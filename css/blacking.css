@@ -1,0 +1,9 @@
+div.blacker{
+    --lvl: 0.0;
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: linear-gradient(to bottom, rgba(0,0,0,var(--lvl)) 0%,rgba(0, 0, 0, calc(var(--lvl)*var(--lvl))) 100%);
+}
